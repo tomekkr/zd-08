@@ -10,10 +10,10 @@ class Televisor {
     }
 
     void showStatus() {
-        System.out.println("Aktualny status telwizora: " + checkAndPrintStatus(status));
+        System.out.println("Aktualny status telwizora: " + translateStatus(status));
     }
 
-    private String checkAndPrintStatus(Boolean status) {
+    private String translateStatus(Boolean status) {
         if (status)
             return "włączony";
         else
